@@ -20,7 +20,8 @@
             background-position: left, right;
             background-repeat: no-repeat, no-repeat;
             background-size: contain;
-            padding-bottom: 100px;
+            padding-bottom: 40px;
+            /* padding: 20px 10px; */
         }
 
         /* NAVBAR SECTION */
@@ -28,7 +29,7 @@
         .navbar-custom {
             background-color: transparent;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            padding: 18px 0 20px ;
+            padding: 18px 0;
             margin: 0;
         }
 
@@ -62,20 +63,19 @@
 
         /* HERO SECTION */
 
-       
+        .hero-text {
+            margin-top: 40px;
+        }
 
         .hero-text h2 {
-            font-size: 50px;
+            font-size: 60px;
             font-weight: 699;
             line-height: 65.7px;
             letter-spacing: 3px;
             background: linear-gradient(90deg, #3b88be, #023a67);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
-
-        .hero{
-            margin-top:60px;
+            padding-top: 30px;
         }
 
         .hero-text p {
@@ -83,12 +83,11 @@
             color: #333;
             letter-spacing: 1.3px;
             margin-top: 1.2rem;
-            line-height: 29px;
+            line-height: 27px;
         }
         .hero-img img {
-            width: 100%;
-            margin-top: 10%;
-
+            width: 95%;
+            margin-top: 0;
             
         }
 
@@ -107,6 +106,24 @@
         .btn-readmore:hover {
             background: linear-gradient(90deg, rgb(1, 2, 44), #0a4f93);
             color: white;
+        }
+
+        /* STATS SECTION */
+        .stats-box {
+            padding: 75px 0px;
+ 
+        }
+
+        .stats-box .card {
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: linear-gradient(90deg, #7490d8, #03233d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+            padding: 0px 10px;
         }
 
         /* HOVER EFFECT */
@@ -138,7 +155,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <section class="hero-section">
@@ -148,7 +164,7 @@
                 <div class="container">
                     <!-- LOGO -->
                     <a class="navbar-brand text-white" href="#">
-                        <img src="imgs/hussain 2.png " alt="Logo" style="height: 40px;">
+                        <img src="imgs/hussain 2.png" alt="Logo" style="height: 40px;">
                     </a>
                     <!-- DROPDOWN BUTTON 1 -->
                     <button class="navbar-toggler text-" type="button" data-bs-toggle="collapse"
@@ -162,7 +178,7 @@
                             <li class="nav-item"><a class="nav-link  " href="home.html">Home</a></li>
                             <!-- DROPDOWN 1 -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="" role="button"
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">About Us</a>
 
                                 <!-- DROPDOWN ITEMS -->
@@ -179,13 +195,13 @@
                                     data-bs-toggle="dropdown">Carrier</a>
                                 <!-- DROPDOWN ITEMS -->
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Jobs</a></li>
-                                    <li><a class="dropdown-item" href="#">Opportunities</a></li>
+                                    <li><a class="dropdown-item" href="Carrier.html">Carrier</a></li>
+                                    <li><a class="dropdown-item" href="Jobs.html">Jobs</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Insights</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Blogs</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="Insights.html">Insights</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="Blogs.html">Blogs</a></li>
                             <!-- DROPDOWN 3 -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link text-white dropdown-toggle" href="#" role="button"
@@ -204,20 +220,42 @@
             <!-- HERO SECTION -->
             <section>
                 <div class="container">
-                    <div class="row align-items-center hero">
+                    <div class="row align-items-c hero">
                         <!-- HERO SECTION Text -->
                         <div class="col-lg-7 hero-text">
-                            <h2>Our Services by Ahmed <br> Communication</h2>
-                            <p>Ahmed Communications offers FM and radio  <br>advertising, YouTube marketing, cable network <br> promotions, voice-over production, digital media <br> campaigns, and customized media planning.</p>
+                            <h2>Contact by Ahmed <br> Communication</h2>
+                            <p>Reach out to Ahmed Communications through <br> phone, email, or WhatsApp for fast support, <br> media bookings, advertising inquiries, and <br> personalized communication service <br> assistance.</p>
                             <!-- READMORE BUTTON -->
                             <button class="btn-readmore">Read More</button>
                         <div>
+                            <!-- STATS-BOX -->
+                            <div class="row stats-box">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card py-4 px-3">
+                                                <h5>16+ Products</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3 mt-md-0">
+                                            <div class="card py-4 px-3">
+                                                <h5>90K+ Users</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3 mt-md-0">
+                                            <div class="card py-4 ">
+                                                <h5>30+ Franchises</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         </div>
 
                          <!-- HERO SECTION IMG -->
-                         <div class="col-lg-5 hero-img align-items-r   mt-1 ">
-                            <img src="imgs/service.png" alt="">
+                         <div class="col-lg-5 hero-img align-items-center mt-3 ">
+                            <img src="imgs/contact.png" alt="">
                         </div>
             </section>
 
